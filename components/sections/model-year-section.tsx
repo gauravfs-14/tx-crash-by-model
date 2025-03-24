@@ -226,8 +226,8 @@ export default function ModelYearSection({ data }: ModelYearSectionProps) {
                     3
                   </span>
                   <span>
-                    The data doesn't account for the relative population of each
-                    model year on the road
+                    The data doesn&apos;t account for the relative population of
+                    each model year on the road
                   </span>
                 </li>
               </ul>
