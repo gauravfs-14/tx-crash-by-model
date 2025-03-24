@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ChevronDown } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import type { CrashData } from "@/lib/types"
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import type { CrashData } from "@/lib/types";
 
 interface IntroSectionProps {
-  data: CrashData[]
+  data: CrashData[];
 }
 
 export default function IntroSection({ data }: IntroSectionProps) {
@@ -22,7 +22,7 @@ export default function IntroSection({ data }: IntroSectionProps) {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -31,35 +31,39 @@ export default function IntroSection({ data }: IntroSectionProps) {
       y: 0,
       transition: { duration: 0.7, ease: "easeOut" },
     },
-  }
+  };
 
   const scrollToTrends = () => {
-    document.getElementById("trends")?.scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById("trends")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const scrollToExplorer = () => {
-    document.getElementById("explorer")?.scrollIntoView({ behavior: "smooth" })
-  }
+    document.getElementById("explorer")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   // Calculate key statistics from the actual data
-  const totalRecords = data.reduce((sum, item) => sum + item.crash_count, 0)
-  const uniqueMakes = new Set(data.map((item) => item.Veh_Make_ID)).size
-  const uniqueModels = new Set(data.map((item) => item.Veh_Mod_ID)).size
-  const uniqueYears = new Set(data.map((item) => item.CrashYear)).size
+  const totalRecords = data.reduce((sum, item) => sum + item.crash_count, 0);
+  const uniqueMakes = new Set(data.map((item) => item.Veh_Make_ID)).size;
+  const uniqueModels = new Set(data.map((item) => item.Veh_Mod_ID)).size;
+  const uniqueYears = new Set(data.map((item) => item.CrashYear)).size;
 
   // Format number in a compact way (k for thousands, M for millions, B for billions)
-  const formatCompactNumber = (num) => {
+  interface FormatCompactNumberFunction {
+    (num: number): string;
+  }
+
+  const formatCompactNumber: FormatCompactNumberFunction = (num) => {
     if (num >= 1000000000) {
-      return `${(num / 1000000000).toFixed(1).replace(/\.0$/, "")}B+`
+      return `${(num / 1000000000).toFixed(1).replace(/\.0$/, "")}B+`;
     }
     if (num >= 1000000) {
-      return `${(num / 1000000).toFixed(1).replace(/\.0$/, "")}M+`
+      return `${(num / 1000000).toFixed(1).replace(/\.0$/, "")}M+`;
     }
     if (num >= 1000) {
-      return `${(num / 1000).toFixed(1).replace(/\.0$/, "")}k+`
+      return `${(num / 1000).toFixed(1).replace(/\.0$/, "")}k+`;
     }
-    return `${num}+`
-  }
+    return `${num}+`;
+  };
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 pt-32 relative overflow-hidden">
@@ -85,7 +89,11 @@ export default function IntroSection({ data }: IntroSectionProps) {
             "radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.2) 0%, rgba(255, 255, 255, 0) 50%)",
           ],
         }}
-        transition={{ duration: 20, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
+        transition={{
+          duration: 20,
+          repeat: Number.POSITIVE_INFINITY,
+          ease: "linear",
+        }}
       />
 
       <motion.div
@@ -99,25 +107,31 @@ export default function IntroSection({ data }: IntroSectionProps) {
           variants={itemVariants}
           className="inline-block mb-6 bg-blue-100 border border-blue-200 rounded-full px-4 py-1"
         >
-          <span className="text-blue-700 font-medium text-sm">Interactive Data Exploration</span>
+          <span className="text-blue-700 font-medium text-sm">
+            Interactive Data Exploration
+          </span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
           className="text-5xl md:text-7xl lg:text-8xl font-bold text-slate-800 mb-6 tracking-tight leading-tight"
         >
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">Texas</span> Road
-          Safety
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+            Texas
+          </span>{" "}
+          Road Safety
           <br />
-          <span className="text-4xl md:text-6xl lg:text-7xl font-medium text-slate-600">Crash Data Analysis</span>
+          <span className="text-4xl md:text-6xl lg:text-7xl font-medium text-slate-600">
+            Crash Data Analysis
+          </span>
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
           className="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed max-w-3xl mx-auto"
         >
-          Explore comprehensive crash data visualization revealing patterns, trends, and insights to improve road safety
-          across Texas.
+          Explore comprehensive crash data visualization revealing patterns,
+          trends, and insights to improve road safety across Texas.
         </motion.p>
 
         {/* Key statistics - now using actual data */}
@@ -126,24 +140,49 @@ export default function IntroSection({ data }: IntroSectionProps) {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 mb-16 max-w-4xl mx-auto"
         >
           {[
-            { value: totalRecords, label: "Total Records", color: "from-blue-600 to-blue-400" },
-            { value: uniqueMakes, label: "Vehicle Makes", color: "from-red-500 to-red-400" },
-            { value: uniqueModels, label: "Vehicle Models", color: "from-amber-500 to-amber-400" },
-            { value: uniqueYears, label: "Years of Data", color: "from-emerald-500 to-emerald-400" },
+            {
+              value: totalRecords,
+              label: "Total Records",
+              color: "from-blue-600 to-blue-400",
+            },
+            {
+              value: uniqueMakes,
+              label: "Vehicle Makes",
+              color: "from-red-500 to-red-400",
+            },
+            {
+              value: uniqueModels,
+              label: "Vehicle Models",
+              color: "from-amber-500 to-amber-400",
+            },
+            {
+              value: uniqueYears,
+              label: "Years of Data",
+              color: "from-emerald-500 to-emerald-400",
+            },
           ].map((stat, index) => (
-            <motion.div key={index} variants={itemVariants} className="text-center px-2">
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              className="text-center px-2"
+            >
               <p
                 className={`text-2xl sm:text-3xl md:text-4xl font-bold mb-1 sm:mb-2 bg-gradient-to-r ${stat.color} text-transparent bg-clip-text truncate`}
               >
                 {formatCompactNumber(stat.value)}
               </p>
-              <p className="text-xs sm:text-sm md:text-base text-slate-600 font-medium">{stat.label}</p>
+              <p className="text-xs sm:text-sm md:text-base text-slate-600 font-medium">
+                {stat.label}
+              </p>
             </motion.div>
           ))}
         </motion.div>
 
         {/* CTA buttons */}
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 justify-center">
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col sm:flex-row gap-4 justify-center"
+        >
           <Button
             onClick={scrollToTrends}
             size="lg"
@@ -169,13 +208,18 @@ export default function IntroSection({ data }: IntroSectionProps) {
         animate={{ opacity: 1, y: [0, 8, 0] }}
         transition={{
           opacity: { delay: 1.5, duration: 0.5 },
-          y: { delay: 1.5, duration: 1.8, repeat: Number.POSITIVE_INFINITY, repeatType: "loop", ease: "easeInOut" },
+          y: {
+            delay: 1.5,
+            duration: 1.8,
+            repeat: Number.POSITIVE_INFINITY,
+            repeatType: "loop",
+            ease: "easeInOut",
+          },
         }}
       >
         <span className="text-sm mb-2">Scroll to explore</span>
         <ChevronDown className="w-5 h-5" />
       </motion.div>
     </section>
-  )
+  );
 }
-

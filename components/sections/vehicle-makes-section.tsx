@@ -1,21 +1,36 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts"
-import { Card, CardContent } from "@/components/ui/card"
-import type { MakeCrash } from "@/lib/types"
-import { Car, Info } from "lucide-react"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+  Cell,
+} from "recharts";
+import { Card, CardContent } from "@/components/ui/card";
+import type { MakeCrash } from "@/lib/types";
+import { Car, Info } from "lucide-react";
 
 interface VehicleMakesSectionProps {
-  data: MakeCrash[]
+  data: MakeCrash[];
 }
 
-export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) {
-  const sectionRef = useRef(null)
-  const chartRef = useRef(null)
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2, margin: "-100px 0px" })
-  const chartInView = useInView(chartRef, { once: true, amount: 0.6 })
+export default function VehicleMakesSection({
+  data,
+}: VehicleMakesSectionProps) {
+  const sectionRef = useRef(null);
+  const chartRef = useRef(null);
+  const isInView = useInView(sectionRef, {
+    once: true,
+    amount: 0.2,
+    margin: "-100px 0px",
+  });
+  const chartInView = useInView(chartRef, { once: true, amount: 0.6 });
 
   // Colors for the bars - using a blue gradient
   const colors = [
@@ -29,10 +44,13 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
     "#7295e8",
     "#7a97e6",
     "#829ae4",
-  ]
+  ];
 
   return (
-    <section ref={sectionRef} className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-blue-50">
+    <section
+      ref={sectionRef}
+      className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-blue-50"
+    >
       <div className="max-w-6xl mx-auto w-full">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -49,8 +67,10 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
             Most Crash-Prone Vehicle Makes
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto text-center">
-            Not all vehicles are created equal when it comes to crash statistics. Let's explore which makes and models
-            appear most frequently in Texas crash data.
+            Not all vehicles are equally represented in Texas crash data. The
+            dataset shows that some makes are consistently involved in higher
+            numbers of reported crashes — revealing potential patterns of
+            exposure, usage, or design-related risk.
           </p>
         </motion.div>
 
@@ -63,14 +83,27 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
         >
           <Card className="shadow-lg border-blue-100 overflow-hidden">
             <div className="bg-gradient-to-r from-blue-50 to-white p-4 border-b border-blue-100">
-              <h3 className="text-xl font-semibold text-slate-800">Vehicle Makes by Crash Frequency</h3>
-              <p className="text-slate-500 text-sm">Total crashes by vehicle manufacturer</p>
+              <h3 className="text-xl font-semibold text-slate-800">
+                Vehicle Makes by Crash Frequency
+              </h3>
+              <p className="text-slate-500 text-sm">
+                Total crashes by vehicle manufacturer
+              </p>
             </div>
             <CardContent className="p-6">
               <div className="h-[500px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
-                  <BarChart data={data} layout="vertical" margin={{ top: 20, right: 30, left: 80, bottom: 20 }}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={true} vertical={false} />
+                  <BarChart
+                    data={data}
+                    layout="vertical"
+                    margin={{ top: 20, right: 30, left: 80, bottom: 20 }}
+                  >
+                    <CartesianGrid
+                      strokeDasharray="3 3"
+                      stroke="#f0f0f0"
+                      horizontal={true}
+                      vertical={false}
+                    />
                     <XAxis
                       type="number"
                       tick={{ fill: "#64748b" }}
@@ -89,10 +122,14 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
                       contentStyle={{
                         backgroundColor: "white",
                         borderRadius: "8px",
-                        boxShadow: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+                        boxShadow:
+                          "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                         border: "1px solid #e2e8f0",
                       }}
-                      formatter={(value) => [`${value.toLocaleString()} crashes`, "Total"]}
+                      formatter={(value) => [
+                        `${value.toLocaleString()} crashes`,
+                        "Total",
+                      ]}
                       labelFormatter={(value) => `${value} Vehicles`}
                     />
                     <Bar
@@ -103,7 +140,10 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
                       animationBegin={chartInView ? 0 : 9999}
                     >
                       {data.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+                        <Cell
+                          key={`cell-${index}`}
+                          fill={colors[index % colors.length]}
+                        />
                       ))}
                     </Bar>
                   </BarChart>
@@ -123,7 +163,8 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
             className="bg-white p-8 rounded-xl shadow-md border border-blue-100"
             whileHover={{
               y: -5,
-              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
               transition: { duration: 0.3, ease: "easeOut" },
             }}
             transition={{ duration: 0.3 }}
@@ -132,15 +173,22 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
               <div className="bg-blue-100 p-3 rounded-full mr-3">
                 <Info className="h-5 w-5 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-800">Popular vs. Crash-Prone</h3>
+              <h3 className="text-xl font-semibold text-slate-800">
+                Popular vs. Crash-Prone
+              </h3>
             </div>
             <p className="text-slate-700 mb-4">
-              It's important to note that the most common vehicles in crashes often correlate with the most popular
-              vehicles on the road. Ford and Chevrolet trucks dominate both sales charts and crash statistics in Texas.
+              Ford and Chevrolet dominate the crash data — which aligns with
+              their long-standing popularity across Texas, particularly for
+              trucks and full-size vehicles. These crash figures don’t
+              necessarily mean the vehicles are unsafe; rather, they reflect how
+              frequently these brands appear on the road.
             </p>
             <p className="text-slate-700">
-              However, when we normalize for vehicle population, some interesting patterns emerge. Certain models show
-              higher crash rates per 1,000 vehicles, suggesting factors beyond mere popularity.
+              When adjusted for vehicle population, some models may show
+              disproportionately high crash rates, hinting at deeper factors
+              such as driving behavior, use-case (e.g., commercial vs.
+              personal), and vehicle design.
             </p>
           </motion.div>
 
@@ -148,7 +196,8 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
             className="bg-white p-8 rounded-xl shadow-md border border-blue-100"
             whileHover={{
               y: -5,
-              boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+              boxShadow:
+                "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
               transition: { duration: 0.3, ease: "easeOut" },
             }}
             transition={{ duration: 0.3 }}
@@ -157,30 +206,41 @@ export default function VehicleMakesSection({ data }: VehicleMakesSectionProps) 
               <div className="bg-blue-100 p-3 rounded-full mr-3">
                 <Car className="h-5 w-5 text-blue-600" />
               </div>
-              <h3 className="text-xl font-semibold text-slate-800">Model-Specific Insights</h3>
+              <h3 className="text-xl font-semibold text-slate-800">
+                Model-Specific Insights
+              </h3>
             </div>
             <p className="text-slate-700 mb-4">
-              When we look at specific models, the data reveals that certain vehicle configurations may contribute to
-              higher crash rates:
+              The data suggests certain design characteristics can influence
+              crash involvement:
             </p>
             <ul className="space-y-3 text-slate-700">
               <li className="flex items-start">
                 <span className="inline-block w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></span>
-                <span>Pickup trucks have higher centers of gravity, potentially increasing rollover risk</span>
+                <span>
+                  Pickup trucks may face elevated rollover risk due to higher
+                  centers of gravity
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></span>
-                <span>Smaller economy cars may offer less protection in collisions with larger vehicles</span>
+                <span>
+                  Compact cars can be more vulnerable in collisions with larger
+                  vehicles
+                </span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></span>
-                <span>Older models lack advanced safety features now standard in newer vehicles</span>
+                <span>
+                  Older models often lack modern safety systems like electronic
+                  stability control, lane assist, and crash avoidance
+                  technologies
+                </span>
               </li>
             </ul>
           </motion.div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

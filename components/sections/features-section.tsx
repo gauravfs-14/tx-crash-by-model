@@ -1,12 +1,22 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import { motion, useInView } from "framer-motion"
-import { TrendingUp, Car, AlertTriangle, Calendar, BarChart2 } from "lucide-react"
+import { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import {
+  TrendingUp,
+  Car,
+  AlertTriangle,
+  Calendar,
+  BarChart2,
+} from "lucide-react";
 
 export default function FeaturesSection() {
-  const sectionRef = useRef(null)
-  const isInView = useInView(sectionRef, { once: true, amount: 0.2, margin: "-100px 0px" })
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, {
+    once: true,
+    amount: 0.2,
+    margin: "-100px 0px",
+  });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -19,7 +29,7 @@ export default function FeaturesSection() {
         ease: "easeOut",
       },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -28,43 +38,52 @@ export default function FeaturesSection() {
       y: 0,
       transition: { duration: 0.7, ease: "easeOut" },
     },
-  }
+  };
 
   const features = [
     {
       icon: <TrendingUp className="text-blue-500 w-8 h-8" />,
       title: "Crash Trends",
-      description: "Discover how crash patterns have evolved over time",
+      description:
+        "Track how crash incidents have changed across years and identify key shifts in driving patterns.",
       color: "blue",
     },
     {
       icon: <Car className="text-amber-500 w-8 h-8" />,
       title: "Vehicle Insights",
-      description: "Explore which makes and models are most frequently involved",
+      description:
+        "See which vehicle makes and models are most commonly involved in crash reports statewide.",
       color: "amber",
     },
     {
       icon: <AlertTriangle className="text-rose-500 w-8 h-8" />,
       title: "Risk Factors",
-      description: "Understand how vehicle age contributes to crash risk",
+      description:
+        "Analyze how vehicle age influences crash likelihood and exposure risk on Texas roads.",
       color: "rose",
     },
     {
       icon: <Calendar className="text-purple-500 w-8 h-8" />,
       title: "Model Year Analysis",
-      description: "See how model year affects crash frequency",
+      description:
+        "Discover patterns in crash frequency based on a vehicle’s manufacturing year.",
       color: "purple",
     },
     {
       icon: <BarChart2 className="text-emerald-500 w-8 h-8" />,
       title: "Interactive Explorer",
-      description: "Filter and analyze the data to find your own insights",
+      description:
+        "Use filters and search tools to explore the dataset, compare vehicles, and surface actionable insights.",
       color: "emerald",
     },
-  ]
+  ];
 
   return (
-    <section id="features" ref={sectionRef} className="py-20 px-4 bg-gradient-to-b from-white to-blue-50">
+    <section
+      id="features"
+      ref={sectionRef}
+      className="py-20 px-4 bg-gradient-to-b from-white to-blue-50"
+    >
       <div className="max-w-6xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,10 +91,13 @@ export default function FeaturesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Explore Our Data Analysis Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-4">
+            Explore Our Data Analysis Features
+          </h2>
           <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-            Our interactive tools help you understand Texas crash data from multiple perspectives, revealing patterns
-            that can lead to improved road safety.
+            Use our interactive tools to uncover insights from Texas vehicle
+            crash data. Analyze trends, vehicle characteristics, and risk
+            factors to better understand roadway safety challenges.
           </p>
         </motion.div>
 
@@ -96,13 +118,14 @@ export default function FeaturesSection() {
               >
                 {feature.icon}
               </div>
-              <h3 className="text-xl font-semibold mb-3 text-slate-800">{feature.title}</h3>
+              <h3 className="text-xl font-semibold mb-3 text-slate-800">
+                {feature.title}
+              </h3>
               <p className="text-slate-600">{feature.description}</p>
             </motion.div>
           ))}
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-
