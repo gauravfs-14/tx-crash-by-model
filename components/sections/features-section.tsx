@@ -52,7 +52,7 @@ export default function FeaturesSection() {
       icon: <Car className="text-amber-500 w-8 h-8" />,
       title: "Vehicle Insights",
       description:
-        "See which vehicle makes and models are most commonly involved in crash reports statewide.",
+        "See which vehicle makes and models are most commonly associated with crashes statewide.",
       color: "amber",
     },
     {

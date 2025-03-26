@@ -42,7 +42,10 @@ export default function IntroSection({ data }: IntroSectionProps) {
   };
 
   // Calculate key statistics from the actual data
-  const totalRecords = data.reduce((sum, item) => sum + item.crash_involvement, 0);
+  const totalRecords = data.reduce(
+    (sum, item) => sum + item.crash_involvement,
+    0
+  );
   const uniqueMakes = new Set(data.map((item) => item.Veh_Make_ID)).size;
   const uniqueModels = new Set(data.map((item) => item.Veh_Mod_ID)).size;
   const uniqueYears = new Set(data.map((item) => item.CrashYear)).size;
@@ -130,8 +133,9 @@ export default function IntroSection({ data }: IntroSectionProps) {
           variants={itemVariants}
           className="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed max-w-3xl mx-auto"
         >
-          Explore comprehensive crash data visualization revealing patterns,
-          trends, and insights to improve road safety across Texas.
+          Explore comprehensive crash data visualization from 2017 - 2024
+          revealing patterns, trends, and insights to improve road safety across
+          Texas.
         </motion.p>
 
         {/* Key statistics - now using actual data */}

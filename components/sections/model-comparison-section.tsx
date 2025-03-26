@@ -72,7 +72,7 @@ export default function ModelComparisonSection({
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 tracking-tight text-center">
-            Top Vehicle Models in Crashes
+            Vehicle Models and Crash Involvement
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto text-center">
             Certain vehicle models consistently appear in Texas crash data.
@@ -92,7 +92,7 @@ export default function ModelComparisonSection({
           <Card className="shadow-lg border-purple-100 overflow-hidden">
             <div className="bg-gradient-to-r from-purple-50 to-white p-4 border-b border-purple-100">
               <h3 className="text-xl font-semibold text-slate-800">
-                Top Models by Crash Frequency
+                Top Models by Crash Involvement
               </h3>
               <p className="text-slate-500 text-sm">
                 Total vehicles involved in crashes by specific vehicle model

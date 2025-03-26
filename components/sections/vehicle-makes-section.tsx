@@ -64,13 +64,13 @@ export default function VehicleMakesSection({
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6 tracking-tight text-center">
-            Most Crash-Prone Vehicle Makes
+            Vehicle Makes and Crash Involvement
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto text-center">
             Not all vehicles are equally represented in Texas crash data. The
-            dataset shows that some makes are consistently involved in higher
-            numbers of reported crashes — revealing potential patterns of
-            exposure, usage, or design-related risk.
+            dataset shows that some makes are involved in higher numbers of
+            reported crashes — revealing potential patterns of exposure, usage,
+            or design-related risk.
           </p>
         </motion.div>
 
@@ -152,7 +152,23 @@ export default function VehicleMakesSection({
             </CardContent>
           </Card>
         </motion.div>
-
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
+          className="my-6 bg-blue-100 border border-blue-200 rounded-lg p-4 text-sm text-blue-700"
+        >
+          <div className="flex items-center gap-2">
+            <Info className="h-4 w-4" />
+            <span className="font-medium">Disclaimer:</span>
+          </div>
+          <p className="mt-1">
+            This analysis is based on reported crash data and may not represent
+            all vehicles on Texas roads. Crash involvement numbers should be
+            considered alongside factors such as vehicle population, usage
+            patterns, and environmental conditions.
+          </p>
+        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
@@ -178,11 +194,11 @@ export default function VehicleMakesSection({
               </h3>
             </div>
             <p className="text-slate-700 mb-4">
-              Ford and Chevrolet dominate the crash data — which aligns with
-              their long-standing popularity across Texas, particularly for
-              trucks and full-size vehicles. These crash figures don’t
-              necessarily mean the vehicles are unsafe; rather, they reflect how
-              frequently these brands appear on the road.
+              Ford and Chevrolet seems to be more involved in crash incidents —
+              which aligns with their long-standing popularity across Texas,
+              particularly for trucks and full-size vehicles. These crash
+              figures don’t necessarily mean the vehicles are unsafe; rather,
+              they reflect how frequently these brands appear on the road.
             </p>
             <p className="text-slate-700">
               When adjusted for vehicle population, some models may show

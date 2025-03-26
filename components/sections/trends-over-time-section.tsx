@@ -69,7 +69,7 @@ export default function TrendsOverTimeSection({
           <Card className="shadow-lg border-blue-100 overflow-hidden">
             <div className="bg-gradient-to-r from-blue-50 to-white p-4 border-b border-blue-100">
               <h3 className="text-xl font-semibold text-slate-800">
-                Annual Crash Incidents
+                Annual Number of Vehicles Involved
               </h3>
               <p className="text-slate-500 text-sm">
                 Total reported vehicles involved in crashes per year
