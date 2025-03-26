@@ -190,21 +190,20 @@ export default function VehicleMakesSection({
                 <Info className="h-5 w-5 text-blue-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-800">
-                Popular vs. Crash-Prone
+                Vehicle Popularity and Crash Frequency
               </h3>
             </div>
             <p className="text-slate-700 mb-4">
-              Ford and Chevrolet seems to be more involved in crash incidents —
-              which aligns with their long-standing popularity across Texas,
-              particularly for trucks and full-size vehicles. These crash
-              figures don’t necessarily mean the vehicles are unsafe; rather,
-              they reflect how frequently these brands appear on the road.
+              Ford and Chevrolet report higher crash involvement — which aligns
+              with their long-standing popularity across Texas, particularly for
+              trucks and full-size vehicles. These crash figures don’t
+              necessarily mean the vehicles are unsafe; rather, they reflect how
+              frequently these brands appear on the road.
             </p>
             <p className="text-slate-700">
-              When adjusted for vehicle population, some models may show
-              disproportionately high crash rates, hinting at deeper factors
-              such as driving behavior, use-case (e.g., commercial vs.
-              personal), and vehicle design.
+              When adjusted for vehicle population, some models may show higher
+              crash rates, hinting at deeper factors such as driving behavior,
+              use-case (e.g., commercial vs. personal), and vehicle design.
             </p>
           </motion.div>
 
@@ -234,8 +233,9 @@ export default function VehicleMakesSection({
               <li className="flex items-start">
                 <span className="inline-block w-2 h-2 rounded-full bg-blue-500 mt-2 mr-2"></span>
                 <span>
-                  Pickup trucks may face elevated rollover risk due to higher
-                  centers of gravity
+                  Pickup trucks, with their higher centers of gravity, can be
+                  associated with an increased risk of rollovers under certain
+                  conditions
                 </span>
               </li>
               <li className="flex items-start">
