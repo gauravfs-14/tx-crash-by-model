@@ -39,7 +39,7 @@ function processYearlyTrends(data: CrashData[]) {
   return years.map((year) => {
     const yearData = data.filter((item) => item.CrashYear === year);
     const totalCrashes = yearData.reduce(
-      (sum, item) => sum + item.crash_count,
+      (sum, item) => sum + item.crash_involvement,
       0
     );
 
@@ -63,7 +63,7 @@ function processTopMakes(data: CrashData[]) {
 
   // Calculate total crashes per make
   const makeCrashes = Object.entries(makeGroups).map(([make, items]) => {
-    const crashes = items.reduce((sum, item) => sum + item.crash_count, 0);
+    const crashes = items.reduce((sum, item) => sum + item.crash_involvement, 0);
     return { make, crashes };
   });
 
@@ -93,7 +93,7 @@ function processAgePatterns(data: CrashData[]) {
 
   // Calculate crashes per age
   const ageCrashes = Object.entries(ageGroups).map(([age, items]) => {
-    const crashes = items.reduce((sum, item) => sum + item.crash_count, 0);
+    const crashes = items.reduce((sum, item) => sum + item.crash_involvement, 0);
     return { age: Number.parseInt(age), crashes };
   });
 
@@ -115,7 +115,7 @@ function processModelComparison(data: CrashData[]) {
   // Calculate total crashes per model
   const modelCrashes = Object.entries(modelGroups).map(([key, items]) => {
     const [make, model] = key.split("-");
-    const crashes = items.reduce((sum, item) => sum + item.crash_count, 0);
+    const crashes = items.reduce((sum, item) => sum + item.crash_involvement, 0);
     return { model, make, crashes };
   });
 
@@ -136,7 +136,7 @@ function processVehicleAgeVsModelYear(data: CrashData[]) {
 
   // Calculate crashes per model year
   const yearCrashes = Object.entries(yearGroups).map(([year, items]) => {
-    const crashes = items.reduce((sum, item) => sum + item.crash_count, 0);
+    const crashes = items.reduce((sum, item) => sum + item.crash_involvement, 0);
     return { modelYear: Number.parseInt(year), crashes };
   });
 

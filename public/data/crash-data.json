@@ -5,483 +5,483 @@
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2020,
-      "crash_count": 423
+      "crash_involvement": 423
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2020,
-      "crash_count": 387
+      "crash_involvement": 387
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 356
+      "crash_involvement": 356
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 412
+      "crash_involvement": 412
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 389
+      "crash_involvement": 389
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2020,
-      "crash_count": 378
+      "crash_involvement": 378
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2020,
-      "crash_count": 345
+      "crash_involvement": 345
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 367
+      "crash_involvement": 367
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 398
+      "crash_involvement": 398
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 402
+      "crash_involvement": 402
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "CAMRY",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2020,
-      "crash_count": 312
+      "crash_involvement": 312
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "CAMRY",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2020,
-      "crash_count": 298
+      "crash_involvement": 298
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "CAMRY",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 287
+      "crash_involvement": 287
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "CAMRY",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 301
+      "crash_involvement": 301
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "CAMRY",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 278
+      "crash_involvement": 278
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "CIVIC",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2020,
-      "crash_count": 267
+      "crash_involvement": 267
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "CIVIC",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2020,
-      "crash_count": 245
+      "crash_involvement": 245
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "CIVIC",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 256
+      "crash_involvement": 256
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "CIVIC",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 234
+      "crash_involvement": 234
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "CIVIC",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 221
+      "crash_involvement": 221
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2019,
-      "crash_count": 401
+      "crash_involvement": 401
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2019,
-      "crash_count": 375
+      "crash_involvement": 375
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2019,
-      "crash_count": 342
+      "crash_involvement": 342
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2019,
-      "crash_count": 398
+      "crash_involvement": 398
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2019,
-      "crash_count": 367
+      "crash_involvement": 367
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2019,
-      "crash_count": 356
+      "crash_involvement": 356
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2019,
-      "crash_count": 332
+      "crash_involvement": 332
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2019,
-      "crash_count": 351
+      "crash_involvement": 351
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2019,
-      "crash_count": 378
+      "crash_involvement": 378
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2019,
-      "crash_count": 385
+      "crash_involvement": 385
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "EXPLORER",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 289
+      "crash_involvement": 289
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "EXPLORER",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 301
+      "crash_involvement": 301
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "EXPLORER",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 312
+      "crash_involvement": 312
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "ALTIMA",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 245
+      "crash_involvement": 245
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "ALTIMA",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 267
+      "crash_involvement": 267
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "ALTIMA",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 256
+      "crash_involvement": 256
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "RAV4",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 234
+      "crash_involvement": 234
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "RAV4",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 256
+      "crash_involvement": 256
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "RAV4",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 278
+      "crash_involvement": 278
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2018,
-      "crash_count": 387
+      "crash_involvement": 387
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2018,
-      "crash_count": 356
+      "crash_involvement": 356
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2018,
-      "crash_count": 332
+      "crash_involvement": 332
     },
     {
       "Veh_Make_ID": "FORD",
       "Veh_Mod_ID": "F150",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2018,
-      "crash_count": 378
+      "crash_involvement": 378
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2015,
       "CrashYear": 2018,
-      "crash_count": 345
+      "crash_involvement": 345
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2018,
-      "crash_count": 321
+      "crash_involvement": 321
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2018,
-      "crash_count": 342
+      "crash_involvement": 342
     },
     {
       "Veh_Make_ID": "CHEV",
       "Veh_Mod_ID": "SILVERADO",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2018,
-      "crash_count": 367
+      "crash_involvement": 367
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "COROLLA",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2019,
-      "crash_count": 276
+      "crash_involvement": 276
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "COROLLA",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2019,
-      "crash_count": 289
+      "crash_involvement": 289
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "COROLLA",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2019,
-      "crash_count": 301
+      "crash_involvement": 301
     },
     {
       "Veh_Make_ID": "TOYT",
       "Veh_Mod_ID": "COROLLA",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2019,
-      "crash_count": 312
+      "crash_involvement": 312
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "ACCORD",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2019,
-      "crash_count": 254
+      "crash_involvement": 254
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "ACCORD",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2019,
-      "crash_count": 267
+      "crash_involvement": 267
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "ACCORD",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2019,
-      "crash_count": 278
+      "crash_involvement": 278
     },
     {
       "Veh_Make_ID": "HOND",
       "Veh_Mod_ID": "ACCORD",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2019,
-      "crash_count": 289
+      "crash_involvement": 289
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "SENTRA",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2018,
-      "crash_count": 234
+      "crash_involvement": 234
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "SENTRA",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2018,
-      "crash_count": 245
+      "crash_involvement": 245
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "SENTRA",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2018,
-      "crash_count": 256
+      "crash_involvement": 256
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "ROGUE",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2018,
-      "crash_count": 223
+      "crash_involvement": 223
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "ROGUE",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2018,
-      "crash_count": 234
+      "crash_involvement": 234
     },
     {
       "Veh_Make_ID": "NISS",
       "Veh_Mod_ID": "ROGUE",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2018,
-      "crash_count": 245
+      "crash_involvement": 245
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "WRANGLER",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2020,
-      "crash_count": 198
+      "crash_involvement": 198
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "WRANGLER",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2020,
-      "crash_count": 212
+      "crash_involvement": 212
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "WRANGLER",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2020,
-      "crash_count": 225
+      "crash_involvement": 225
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "WRANGLER",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2020,
-      "crash_count": 237
+      "crash_involvement": 237
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "CHEROKEE",
       "Veh_Mod_Year": 2016,
       "CrashYear": 2019,
-      "crash_count": 187
+      "crash_involvement": 187
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "CHEROKEE",
       "Veh_Mod_Year": 2017,
       "CrashYear": 2019,
-      "crash_count": 201
+      "crash_involvement": 201
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "CHEROKEE",
       "Veh_Mod_Year": 2018,
       "CrashYear": 2019,
-      "crash_count": 213
+      "crash_involvement": 213
     },
     {
       "Veh_Make_ID": "JEEP",
       "Veh_Mod_ID": "CHEROKEE",
       "Veh_Mod_Year": 2019,
       "CrashYear": 2019,
-      "crash_count": 224
+      "crash_involvement": 224
     }
   ]
 }

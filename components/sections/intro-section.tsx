@@ -42,7 +42,7 @@ export default function IntroSection({ data }: IntroSectionProps) {
   };
 
   // Calculate key statistics from the actual data
-  const totalRecords = data.reduce((sum, item) => sum + item.crash_count, 0);
+  const totalRecords = data.reduce((sum, item) => sum + item.crash_involvement, 0);
   const uniqueMakes = new Set(data.map((item) => item.Veh_Make_ID)).size;
   const uniqueModels = new Set(data.map((item) => item.Veh_Mod_ID)).size;
   const uniqueYears = new Set(data.map((item) => item.CrashYear)).size;

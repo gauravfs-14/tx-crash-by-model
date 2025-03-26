@@ -3,7 +3,7 @@ export interface CrashData {
   Veh_Mod_ID: string
   Veh_Mod_Year: number
   CrashYear: number
-  crash_count: number
+  crash_involvement: number
 }
 
 export interface ProcessedData {

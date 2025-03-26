@@ -72,7 +72,7 @@ export default function TrendsOverTimeSection({
                 Annual Crash Incidents
               </h3>
               <p className="text-slate-500 text-sm">
-                Total reported vehicle crashes by year
+                Total reported vehicles involved in crashes per year
               </p>
             </div>
             <CardContent className="p-6">
@@ -113,7 +113,7 @@ export default function TrendsOverTimeSection({
                     <Line
                       type="monotone"
                       dataKey="totalCrashes"
-                      name="Total Crashes"
+                      name="Total Vechiles Involved"
                       stroke="#3b82f6"
                       strokeWidth={3}
                       dot={{ r: 4, strokeWidth: 2, fill: "#fff" }}
@@ -158,7 +158,7 @@ export default function TrendsOverTimeSection({
                 </span>
                 <span>
                   Crash incidents peaked in 2019, reaching over 1.1 million
-                  reported crashes — the highest in the 8-year span.
+                  reported vehicles involved — the highest in the 8-year span.
                 </span>
               </li>
               <li className="flex items-start">
@@ -166,9 +166,9 @@ export default function TrendsOverTimeSection({
                   2
                 </span>
                 <span>
-                  A significant drop occurred in 2020, with crash totals falling
-                  to around 907,000, likely due to reduced traffic during the
-                  pandemic lockdown period.
+                  A significant drop occurred in 2020, with vehicle involvement
+                  totals falling to around 907,000, likely due to reduced
+                  traffic during the pandemic lockdown period.
                 </span>
               </li>
               <li className="flex items-start">
@@ -176,8 +176,8 @@ export default function TrendsOverTimeSection({
                   3
                 </span>
                 <span>
-                  From 2017 to 2019, crash counts increased by 5.48%, reflecting
-                  rising traffic volume, vehicle ownership, and urban
+                  From 2017 to 2019, vehicles involved increased by 5.48%,
+                  reflecting rising traffic volume, vehicle ownership, and urban
                   congestion.
                 </span>
               </li>

@@ -53,7 +53,7 @@ export default function DataExplorerSection({
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // State for sorting
-  const [sortField, setSortField] = useState<keyof CrashData>("crash_count");
+  const [sortField, setSortField] = useState<keyof CrashData>("crash_involvement");
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
 
   // State for pagination
@@ -440,11 +440,11 @@ export default function DataExplorerSection({
                       </TableHead>
                       <TableHead
                         className="font-semibold text-right cursor-pointer hover:bg-slate-100"
-                        onClick={() => handleSort("crash_count")}
+                        onClick={() => handleSort("crash_involvement")}
                       >
                         <div className="flex items-center justify-end">
-                          Crash Count
-                          {sortField === "crash_count" &&
+                          Crash Involvement
+                          {sortField === "crash_involvement" &&
                             (sortDirection === "asc" ? (
                               <SortAsc className="ml-1 h-4 w-4 text-blue-500" />
                             ) : (
@@ -465,7 +465,7 @@ export default function DataExplorerSection({
                           <TableCell>{item.Veh_Mod_Year}</TableCell>
                           <TableCell>{item.CrashYear}</TableCell>
                           <TableCell className="text-right font-medium">
-                            {item.crash_count.toLocaleString()}
+                            {item.crash_involvement.toLocaleString()}
                           </TableCell>
                         </TableRow>
                       ))

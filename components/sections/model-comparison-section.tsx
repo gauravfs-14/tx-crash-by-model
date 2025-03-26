@@ -95,7 +95,7 @@ export default function ModelComparisonSection({
                 Top Models by Crash Frequency
               </h3>
               <p className="text-slate-500 text-sm">
-                Total crashes by specific vehicle model
+                Total vehicles involved in crashes by specific vehicle model
               </p>
             </div>
             <CardContent className="p-6">
@@ -135,7 +135,7 @@ export default function ModelComparisonSection({
                         border: "1px solid #e2e8f0",
                       }}
                       formatter={(value) => [
-                        `${value.toLocaleString()} crashes`,
+                        `${value.toLocaleString()} involvement`,
                         "Total",
                       ]}
                       labelFormatter={(value) => `${value}`}
@@ -218,7 +218,7 @@ export default function ModelComparisonSection({
                 </span>
                 <span>
                   Pickup trucks dominate the top of the list, with high crash
-                  counts across multiple model years
+                  involvement across multiple model years
                 </span>
               </li>
               <li className="flex items-start">

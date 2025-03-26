@@ -46,10 +46,10 @@ export default function VehicleAgeSection({ data }: VehicleAgeSectionProps) {
             Vehicle Age & Crash Risk
           </h2>
           <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto text-center">
-            Does a vehicle’s age affect its crash likelihood? The data suggests
-            it does — and not always in the ways we might expect. Age-related
-            trends in crash frequency reveal a nuanced relationship between
-            vehicle lifecycle and crash risk.
+            Does a vehicle&apos;s age affect its crash likelihood? The data
+            suggests it does — and not always in the ways we might expect.
+            Age-related trends in crash frequency reveal a nuanced relationship
+            between vehicle lifecycle and crash risk.
           </p>
         </motion.div>
 
@@ -66,7 +66,7 @@ export default function VehicleAgeSection({ data }: VehicleAgeSectionProps) {
                 Crash Frequency by Vehicle Age
               </h3>
               <p className="text-slate-500 text-sm">
-                Number of crashes by vehicle age in years
+                Number of vehicles involved in crash by vehicle age in years
               </p>
             </div>
             <CardContent className="p-6">
@@ -104,7 +104,7 @@ export default function VehicleAgeSection({ data }: VehicleAgeSectionProps) {
                         border: "1px solid #e2e8f0",
                       }}
                       formatter={(value) => [
-                        `${value.toLocaleString()} crashes`,
+                        `${value.toLocaleString()} involvements`,
                         "Total",
                       ]}
                       labelFormatter={(value) => `${value} year old vehicles`}
@@ -144,14 +144,14 @@ export default function VehicleAgeSection({ data }: VehicleAgeSectionProps) {
             </h3>
           </div>
           <p className="text-slate-700 mb-6">
-            Our analysis shows that crash frequency peaks at vehicle age 4, with
-            over 588,000 crashes reported at this age alone. Vehicles aged 0–3
-            years accounted for nearly 1.94 million crashes, largely due to
-            their high presence and mileage on the road. Vehicles aged 4–8 years
-            had the highest crash volume, totaling over 2.68 million crashes.
-            Vehicles aged 9–20 years collectively contributed to over 3.39
-            million crashes, reflecting longer service lifespans and increased
-            risk from aging components.
+            Our analysis shows that crash involvement peaks at vehicle age 4,
+            with over 588,000 vehicle involvement in crashes reported at this
+            age alone. Vehicles aged 0–3 years accounted for nearly 1.94 million
+            involvement, largely due to their high presence and mileage on the
+            road. Vehicles aged 4–8 years had the highest crash involvement,
+            totaling over 2.68 million. Vehicles aged 9–20 years collectively
+            contributed to over 3.39 million, reflecting longer service
+            lifespans and increased risk from aging components.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

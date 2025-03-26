@@ -87,7 +87,7 @@ export default function VehicleMakesSection({
                 Vehicle Makes by Crash Frequency
               </h3>
               <p className="text-slate-500 text-sm">
-                Total crashes by vehicle manufacturer
+                Total vehicles invloved in crash by vehicle manufacturer
               </p>
             </div>
             <CardContent className="p-6">
@@ -127,7 +127,7 @@ export default function VehicleMakesSection({
                         border: "1px solid #e2e8f0",
                       }}
                       formatter={(value) => [
-                        `${value.toLocaleString()} crashes`,
+                        `${value.toLocaleString()} involvements`,
                         "Total",
                       ]}
                       labelFormatter={(value) => `${value} Vehicles`}

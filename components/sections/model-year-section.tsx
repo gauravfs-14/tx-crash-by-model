@@ -70,7 +70,7 @@ export default function ModelYearSection({ data }: ModelYearSectionProps) {
                 Crashes by Model Year
               </h3>
               <p className="text-slate-500 text-sm">
-                Total crashes by vehicle model year
+                Total vehicle involved in crashes by vehicle model year
               </p>
             </div>
             <CardContent className="p-6">
@@ -98,13 +98,6 @@ export default function ModelYearSection({ data }: ModelYearSectionProps) {
                       tickLine={{ stroke: "#cbd5e1" }}
                       axisLine={{ stroke: "#e2e8f0" }}
                       width={60}
-                      label={{
-                        value: "Crash Count",
-                        angle: -90,
-                        position: "insideLeft",
-                        offset: -5,
-                        fill: "#64748b",
-                      }}
                     />
                     <Tooltip
                       contentStyle={{
@@ -115,7 +108,7 @@ export default function ModelYearSection({ data }: ModelYearSectionProps) {
                         border: "1px solid #e2e8f0",
                       }}
                       formatter={(value) => [
-                        `${value.toLocaleString()} crashes`,
+                        `${value.toLocaleString()} involvements`,
                         "Total",
                       ]}
                       labelFormatter={(value) => `${value} Model Year`}
@@ -157,13 +150,13 @@ export default function ModelYearSection({ data }: ModelYearSectionProps) {
             </h3>
           </div>
           <p className="text-slate-700 mb-6">
-            Crash counts increase with newer vehicle model years up until a peak
-            in 2015, which recorded over 622,000 crashes — the highest of any
-            year in the dataset. From 2010 to 2015, crash involvement grew
-            sharply, likely due to the increasing number of vehicles produced
-            and registered from those years. After 2015, crash totals begin to
-            decline as the vehicles get newer, reflecting the natural delay in
-            crash exposure for recently released models.
+            Crash involvement increase with newer vehicle model years up until a
+            peak in 2015, which recorded over 622,000 crash involvement — the
+            highest of any year in the dataset. From 2010 to 2015, crash
+            involvement grew sharply, likely due to the increasing number of
+            vehicles produced and registered from those years. After 2015, crash
+            involvement begin to decline as the vehicles get newer, reflecting
+            the natural delay in crash exposure for recently released models.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -208,8 +201,8 @@ export default function ModelYearSection({ data }: ModelYearSectionProps) {
                     1
                   </span>
                   <span>
-                    Despite higher crash numbers, newer vehicles typically offer
-                    better occupant protection
+                    Despite higher crash involvement, newer vehicles typically
+                    offer better occupant protection
                   </span>
                 </li>
                 <li className="flex items-start">

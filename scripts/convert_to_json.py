@@ -14,7 +14,7 @@ with open(input_file, newline='', encoding='utf-8') as csvfile:
             "Veh_Mod_ID": row["Veh_Mod_ID"],
             "Veh_Mod_Year": int(row["Veh_Mod_Year"]) if row["Veh_Mod_Year"].isdigit() else None,
             "CrashYear": int(row["CrashYear"]) if row["CrashYear"].isdigit() else None,
-            "crash_count": int(row["crash_count"]) if row["crash_count"].isdigit() else 0
+            "crash_involvement": int(row["crash_involvement"]) if row["crash_involvement"].isdigit() else 0
         })
 
 with open(output_file, 'w', encoding='utf-8') as jsonfile:
