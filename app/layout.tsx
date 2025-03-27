@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   title: "Texas Road Safety - Crash Data Analysis | Interactive Story",
   description:
     "Explore comprehensive crash data visualization revealing patterns, trends, and insights to improve road safety across Texas.",
+  openGraph: {
+    title: "Texas Road Safety - Crash Data Analysis",
+    description:
+      "Explore comprehensive crash data visualization revealing patterns, trends, and insights to improve road safety across Texas.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1697,
+        height: 988,
+        alt: "Texas Road Safety Data Visualization",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
